@@ -1,0 +1,9 @@
+{
+  "name": "notas-atletas",
+  "version": "1.0.0",
+  "description": "Projeto DEVstart",
+  "main": "index.js",
+  "repository": "https://github.com/leo-badell/main.git",
+  "author": "Leonardo <leonardobadell@hotmail.com>",
+  "license": "MIT"
+}
