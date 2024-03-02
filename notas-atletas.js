@@ -17,3 +17,36 @@ let atletas = [
     }
    ];
 
+let nomeAtletas = 0;
+let obterMedia = 0;
+let notasResultado =0;
+
+for (let i = 0; i < atletas.length; i++) {
+nomeAtletas = atletas.map(function(nomes) {
+    return nomes.nome
+})
+
+notasResultado = atletas.map(function(notas) {
+    let total = notas.notas.slice();
+    total.sort(function(a, b) {
+        return a - b
+    })
+    return total;
+})
+}
+
+for(let i= 0; i < atletas.length; i++) {
+    switch (i) {
+        case i:
+            console.log("Atleta: " + nomeAtletas[i])
+            console.log("Resultado: " + notasResultado[i])
+            let notasAtletas = notasResultado[i].slice(1, notasResultado[i].length - 1);
+            let soma = notasResultado.reduce(function(total, atual) {
+                return total + atual
+            })
+            let media = soma / notasAtletas.length;
+            console.log(obterMedia&{media})
+            console.log(console.log("Atleta não cadastrado")
+            )
+    }
+}
